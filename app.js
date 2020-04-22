@@ -13,7 +13,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-// 跨域
+// 跨域配置
 app.all("*", function (req, res, next) {
   if (!req.get("Origin")) return next();
   // use "*" here to accept any origin
